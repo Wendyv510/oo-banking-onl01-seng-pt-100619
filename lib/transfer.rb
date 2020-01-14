@@ -34,7 +34,7 @@ class Transfer
           @sender.balance -= @amount 
           @receiver.balance += @amount
           @status = "Complete"
-    elsif @status == "Complete"
+    elsif @status = "Complete"
           "Transaction already completed."
     else 
           @sender.balance < @amount || @sender.status = "closed"
